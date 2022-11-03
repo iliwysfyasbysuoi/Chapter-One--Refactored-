@@ -47,6 +47,10 @@ function checkFileType(file , callback){
 
 const app = express();
 
+app.get('/google4c88b64fed25bf50', function(req, res){
+    res.render("google4c88b64fed25bf50");
+})
+
 app.get('/',controller.getHome);
 app.get('/home',controller.getHome);
 
