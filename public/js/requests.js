@@ -187,7 +187,7 @@ $(document).ready(function () {
             console.log("LENGTH: "+ result.searchList.length);
 
 
-            result.searchList.forEach(function(v, err){
+            result.searchList.forEach(function(v, index){
 
                 var bookresult = 
                 `
@@ -221,6 +221,7 @@ $(document).ready(function () {
                 `    ;
 
                 $("#fulfillsearchresults").append(bookresult);
+                
 
 
             })

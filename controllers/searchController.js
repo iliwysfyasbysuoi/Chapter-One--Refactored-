@@ -79,7 +79,7 @@ const searchController = {
             bookVersionsModel.find({}, function (err, versionsresult) {
                 if (versionsresult != null) {
                     count = 0;
-                    versionsresult.forEach(function (v, err) {
+                    versionsresult.forEach(function (v, index) {
                         //stores needed variables from the bookVersionsModel
                         var book_ID = v.book_ID;
                         var sellingPrice = v.sellingPrice;
