@@ -5,13 +5,13 @@ const hbs = require("hbs")
 // const mongoose = require('mongoose');
 const path = require('path');
 
-require('dotenv').config({patj: __dirname + '/.env'});
+require('dotenv').config({ patj: __dirname + '/.env' });
 
 
-const bodyParser= require('body-parser')
+const bodyParser = require('body-parser')
 const multer = require('multer');
 
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 const routes = require('./routes/routes.js');
 // const db = require('./model/db.js');
@@ -25,8 +25,8 @@ const myurl = `mongodb+srv://admin:${process.env.MONGODB_PASS}@cluster0.u3t5h.mo
 //Set Storage Engine
 const storage = multer.diskStorage({
     destination: './public/uploads',
-    filename: function( req, file, callback){
-        callback(null, file.fieldname + '-' + Date.now() +  path.extname(file.originalname));
+    filename: function (req, file, callback) {
+        callback(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
     }
 });
 
@@ -36,7 +36,7 @@ const upload = multer({
 }).single('myImage');
 
 //helper used if a variable is equal to a value
-hbs.registerHelper('ifEquals', function(arg1, arg2, options) {
+hbs.registerHelper('ifEquals', function (arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
@@ -47,15 +47,17 @@ app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.static(__dirname + "/public"));
 
-mongoose.connect(myurl,  { useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.connect(myurl, { useNewUrlParser: true, useUnifiedTopology: true });
 
-MongoClient.connect(myurl,  { useNewUrlParser: true , useUnifiedTopology: true }  , (err, client) => {
+MongoClient.connect(myurl, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
     if (err) return console.log(err)
-    db = client.db('chapterone') 
+    db = client.db('chapterone')
     app.listen(port, () => {
-      console.log('Listening to port: ' + port);
-      console.log('Connected to Database: ' + myurl);
+        console.log('Listening to port: ' + port);
+        console.log('Connected to Database: ' + myurl);
     })
+
+
 })
 
 
@@ -67,11 +69,11 @@ app.use(session({
     'secret': process.env.MONGO_STORE_SECRET,
     'resave': false,
     'saveUninitialized': false,
-    store: new MongoStore({mongooseConnection: mongoose.connection})
+    store: new MongoStore({ mongooseConnection: mongoose.connection })
 }));
 
 // parses incoming requests with urlencoded payloads
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
 app.use('/', routes);
 
