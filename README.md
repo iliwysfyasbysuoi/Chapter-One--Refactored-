@@ -7,7 +7,7 @@ This is a refactored repository to remove the secrets from git and improve code.
 ## Follow the steps below to set-up :
 1. Clone the repository either by downloading the contents of the repository, or using the command below (Note: git should be installed in your system for this to work).
 ```
-git clone 
+git clone https://github.com/iliwysfyasbysuoi/Chapter-One--Refactored-.git
 
 ```
 2. Open Command Prompt
@@ -19,6 +19,9 @@ git clone
 ```
 http://localhost:9090/
 ```
+
+## Deployment
+You can access a deployed version through this link: [https://chapterone-itisdev.seanxavier.one/](https://chapterone-itisdev.seanxavier.one/). This is deployed on my server at NameCheap.
 
 ## Sample Users
 
