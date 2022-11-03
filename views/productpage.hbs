@@ -1,0 +1,182 @@
+<head>
+    {{>head}}
+    <title>Books | Chapter One</title>
+</head>
+<body>
+    {{!-- NAVBARS START --}}
+    <div id= "navvisit">
+        {{> navvisit}}
+    </div>
+    <div id = "navadmin">
+         {{> navadmin}}
+    </div>
+    <div id = "navuser">
+       {{> navuser}}
+    </div>
+    {{!-- NAVBARS END --}}
+    <br>
+    <div style="width: 15%; float:left"> 
+      <center>
+        <h5 style="margin-left: 10px">Categories</h5>
+        <div id="accordion" style="margin-left: 10px">
+          <div class="card">
+            <div style="cursor: pointer" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <p style="margin: 5px">
+                  Art and Design
+              </p>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Art">Art</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Beauty And Fashion">Beauty And Fashion</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Architecture">Architecture</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Film And Media">Film And Media</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Photography">Photography</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Graphic Design">Graphic Design</a><br>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div div style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <p style="margin: 5px">
+                  Children's
+               </p>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Hobbies">Hobbies</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Children's Classic">Children's Classic</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Toddler">Toddler</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Early Reader">Early Reader</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Fantasy">Fantasy</a><br>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div style="cursor: pointer" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <p style="margin: 5px">
+                  Graphic Novel
+                </p>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Comics">Comics</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Manga">Manga</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Illustrated Humor">Illustrated Humor</a><br>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div style="cursor: pointer" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <p style="margin: 5px">
+                  Humanities
+                </p>
+            </div>
+
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Literature">Literature</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/History">History</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Non-Fiction">Non-Fiction</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Fiction">Fiction</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Religion">Religion</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Philosophy">Philosphy</a><br>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div style="cursor: pointer" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <p style="margin: 5px">
+                  Lifestyle
+                </p>
+            </div>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Cooking">Cooking</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Family And Relationships">Family And Relationships</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Health">Health</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Travel">Travel</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Sports">Sports</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Crafts">Crafts</a><br>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div style="cursor: pointer" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <p style="margin: 5px">
+                  Professional
+                </p>
+            </div>
+
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Business">Business</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Language">Language</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Science">Science</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Self-Help">Self-Help</a><br>
+                <a style="margin: 5px" class="btn btn-outline-secondary" href="../browse/Psychology">Psychology</a><br>
+                </div>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+
+    <div class="container" style="width: 85%">
+      <br>
+      <div class="row" style="padding: 0% 3%">
+        <h3>{{header}}</h3>
+      </div>
+      <br>
+
+      <div class="row">
+          {{#each bookList}}
+          <div class="col-3">
+            <div class="card text-center">
+                <a href="../books/{{{bookVersion_ID}}}"style = " color: black">
+                <img class="card-img-top" src="{{{bookCover}}}" height="200px" width="180px" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <a href="../books/{{{bookVersion_ID}}}"style = " color: black">
+                    <p class="card-text"><b>{{title}}</b></p>
+                    <p classes="card-text">{{aName}}</p>
+                    <p classes="card-text">Php {{sellingPrice}}</p>
+                  </a>
+                
+                <button type="button" id="{{{bookVersion_ID}}}" onclick="addBookToCart(this.id)" class="btn btn-primary">Add to Cart</button>
+                
+                </div>
+            </div>
+          </div>
+          {{/each}}
+          
+      </div>
+    </div>
+
+
+    <script>
+      function addBookToCart(clicked) {
+            fetch("/addToCart/" + clicked, {method: 'POST'})
+                    .then(function(response) {
+                        if(response.ok) {
+                            console.log('Click was recorded');
+                            window.location.assign("/cart");
+                        }
+                        throw new Error('Request failed.');
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                    });
+                    return false;
+        }
+    </script>
+</body>

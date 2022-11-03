@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head}}
+
+    <script src="./js/login.js" type="text/javascript"></script> 
+
+    <title>Login | Chapter One</title>
+</head>
+<body>
+    {{!-- NAVBARS START --}}
+    <div id= "navvisit">
+        {{> navvisit}}
+    </div>
+    <div id = "navadmin">
+         {{> navadmin}}
+    </div>
+    <div id = "navuser">
+       {{> navuser}}
+    </div>
+    {{!-- NAVBARS END --}}
+   
+    {{!-- <!--  SINGLE FILE -->
+    <form action="/uploadfile" enctype="multipart/form-data" method="POST"> 
+    <input type="file" name="myFile" />
+    <input type="submit" value="Upload a file"/>
+    </form> --}}
+
+<br><br>
+    <!--   PHOTO-->
+    {{msg}}
+
+    <form action="/dummyupload" enctype="multipart/form-data" method="POST"> 
+        <input type="file" name="myImage" accept="image/*" />
+        <input type="submit" value="Upload Photo"/>
+    </form>
+    <br>
+    
+    {{#if image }} <img src="{{image}}" > {{/if}}
+
+    
+
+
+
+
+</body>
+</html>

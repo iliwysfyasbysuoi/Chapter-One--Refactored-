@@ -1,0 +1,258 @@
+.container{
+  max-width:1920px; 
+  height: 1080px;
+  position: fixed;
+  margin:0px;
+  top: 56px;
+}
+img{ max-width:80%;}
+.inbox_people {
+  background: #f8f8f8 none repeat scroll 0 0;
+  float: left;
+  overflow: hidden;
+  width: 30%; border-right:1px solid #c4c4c4;
+  
+}
+.inbox_msg {
+  border: 1px solid #c4c4c4;
+  clear: both;
+  /* overflow: hidden; */
+  /* height: 100%; */
+}
+.top_spac{ margin: 20px 0 0;}
+
+#composeNewMessageButton{
+  height: 25px;
+  float: right;
+
+}
+
+#composeNewMessageButton:hover{
+  height: 25px;
+  cursor: pointer;
+  
+
+}
+
+/* disables arrows in number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+.recent_heading {float: left; width:100%;}
+
+.srch_bar {
+  display: inline-block;
+  text-align: right;
+  width: 60%; 
+  padding: 0;
+}
+
+.headind_srch{ 
+  padding:10px 29px 10px 20px; 
+  overflow:hidden; 
+  border-bottom:1px solid #c4c4c4;
+  vertical-align: center;
+  font-size: 21px;
+  height: 7vh;
+}
+
+.messageRightName{ 
+  padding:10px 30px 10px 20px; 
+  height: 7vh;
+  width: 100%;
+  overflow:hidden; 
+  border-bottom:1px solid #c4c4c4;
+  text-align: center;
+  background: #f8f8f8;
+  color: #212529;
+}
+
+.recent_heading h4 {
+  color: #212529;
+  font-size: 21px;
+  margin: auto;
+}
+
+.chat_ib h5{ 
+  font-size:15px; 
+  color:#212529; 
+  margin:0 0 8px 0;
+}
+
+.chat_ib h5 span{ 
+  font-size:13px; 
+  float:right;
+}
+
+.chat_ib p{ 
+  font-size:14px; 
+  color:#212529; 
+  margin:auto;
+}
+
+.chat_img {
+  float: left;
+  width: 11%;
+}
+.chat_ib {
+  float: left;
+  padding: 0 15px 0 15px;
+  width: 100%;
+}
+
+.chat_people{ 
+  overflow:hidden; 
+  clear:both;
+}
+
+.chat_list {
+  border: 1px solid #ebebeb;
+  margin: 0;
+  padding: 18px 16px 10px;
+}
+
+.chat_list:hover {
+  border-left: 5px solid #6f8599;
+  margin: 0;
+  padding: 18px 16px 10px;
+}
+
+/* para may ellipses nalang sa chat panel if nagoverflow na */
+.chat_list p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  
+  
+}
+
+.inbox_chat { 
+  /* position: relative; */
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+.active_chat{ 
+  background:#dddddd;
+  border-left: 5px solid #AC703D;
+}
+
+.incoming_msg_img {
+  display: inline-block;
+  width: 5%;
+}
+
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 92%;
+ }
+ .received_withd_msg p {
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #212529;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+.time_date {
+  color: #747474;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+.seen {
+  color: #747474;
+  font-size: 12px;
+  /* margin: 8px 0 0; */
+}
+.received_withd_msg { width: 57%;}
+.messagesRight {
+  float: left;
+  /* padding: 0px 15px 0 25px; */
+  width: 70%;
+  height: 100%;
+  
+}
+
+ .sent_msg p {
+  background: #AC703D none repeat scroll 0 0;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0; color:#fff;
+  padding: 5px 10px 5px 12px;
+  width:100%;
+}
+.outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+.sent_msg {
+  float: right;
+  width: 46%;
+}
+.input_msg_write input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #212529;
+  font-size: 15px;
+  min-height: 48px;
+  width: 90%;
+}
+
+.type_msg {
+  border-top: 1px solid #c4c4c4;
+  position: relative; 
+  height:1vh;
+  bottom: 0px;
+}
+
+.msg_send_btn {
+  background: #AC703D none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 2%;
+  top: 7.5px;
+  width: 33px;
+}
+.messaging { 
+  /* max-width:1920px;  */
+  border-top: 1px solid #c4c4c4;
+  width:100%;
+  height: 85vh;
+  position: absolute;
+  top:56px;
+  bottom:0px;
+  /* top: 56px; */
+}
+.msg_history {
+  padding: 15px 15px 0px 25px;
+  height: 79vh;
+  overflow-y: auto;
+}
+
+.write_msg{
+  padding:5px 15px 5px 15px;
+}
+
+input.write_msg:focus{
+  /* outline: none !important; */
+  /* border-color: 5px solid #AC703D; */
+  outline-color:  #AC703D;
+  
+}

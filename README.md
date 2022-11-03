@@ -1,0 +1,22 @@
+# ITISDEV
+
+## Follow the steps below to set-up :
+1. Clone the repository either by downloading the contents of the repository, or using the command below (Note: git should be installed in your system for this to work).
+```
+git clone 
+
+```
+2. Open Command Prompt
+3. Navigate to the project folder - the folder containing the contents of the cloned or downloaded repository.
+4. Run the command `npm install` to initialize and install all necessary modules used in the project.
+
+5. Run the command 'npx nodemon index' to run the program. Run the command 'rs' to manually restart the port. Nodemon is installed for easier restarting of the run when making changes.
+6. Now enter the link below to your browser:
+```
+http://localhost:9090/
+```
+
+Sample Users
+
+Admin || seanxnieva || secret
+Customer || willowsmith || secret

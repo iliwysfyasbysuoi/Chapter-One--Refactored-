@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head}}
+    <title>My Requests | Chapter One</title>
+</head>
+<body>
+    {{!-- NAVBARS START --}}
+    <div id= "navvisit">
+        {{> navvisit}}
+    </div>
+    <div id = "navadmin">
+         {{> navadmin}}
+    </div>
+    <div id = "navuser">
+       {{> navuser}}
+    </div>
+    {{!-- NAVBARS END --}}
+<div id="requestlist">
+  
+
+  <div class="container-fluid-nopadding" >
+
+        <div class="card text-center">
+            {{!-- <div class="card-header-center bg-light">
+                <h4>Requested Books</h4>
+            </div> --}}
+
+            <div class="card-header card-header-tabs bg-light">
+                <br>
+                <ul class="nav nav-tabs  bg-light">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/requestlist/Active">Active Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/requestlist/Cancelled">Cancelled Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/requestlist/Fulfilled">Fulfilled Requests</a>
+                    </li>
+                </ul>
+            </div>
+                
+
+            <div class="card-body-orders  overflow-auto vh80"  >
+                <table class=" table table-bordered table-hover ">
+                    <thead class="thead-light">
+                        <tr>
+                            <th >Request Number</th>
+                            <th >Requester</th>
+                            <th >Book Details</th>
+                            <th> Urgent </th>
+                            <th> maxPrice </th>
+                            <th >Quantity</th>
+                            <th>Date Requested</th> 
+                            {{!-- <th >Priority Rating</th> --}}
+                            <th> Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each requests}}
+                            <tr>
+                                <th scope="row">{{request_ID}}</th>   
+                                <td>  {{requester}}</td>
+                                <td align = "left">  
+                                    <strong>Title:</strong> {{ book_title}} <br>
+                                    <strong>Author/s:</strong> {{book_author}} <br>
+                                    <strong>Description: </strong> {{description}}
+                                </td>
+                                <td>{{isUrgent}}</td>
+                                <td>{{maxPrice}}</td>
+                                <td>{{quantity}}</td>
+                                <td>{{date_requested}}</td> 
+                                {{!-- <td>{{priority_rating}}</td> --}}
+                                <td>{{status}}</td>
+                            </tr>
+                        {{/each}}
+
+                        
+                        <tr class = "bg-light">
+                            {{#if requests}}
+                                <td colspan="8"><h5>End of the list.</h5></td>
+                            {{else}}
+                                <td colspan="8" ><h5>No request to show.</h5></td>
+                            {{/if}}
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+</body>
+</html>
