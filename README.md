@@ -1,5 +1,9 @@
 # Chapter One - ITISDEV Project
 
+Chapter One is an e-commerce platform for a fictional book store selling new and unused books that can have different versions. It allows consumers to request for a specific book. Book requests are rated by priority using an algorithm. The WebApp also has a messaging functionality so that customers can send messages to the admins for book availability and other concerns. The Chapter One WebApp has more functions and features which you can read more in details below.
+
+This is a refactored repository to remove the secrets from git and improve code. This was first finished on October 2020 as a final project for a Web Development Course (ITISDEV) at De La Salle University.
+
 ## Follow the steps below to set-up :
 1. Clone the repository either by downloading the contents of the repository, or using the command below (Note: git should be installed in your system for this to work).
 ```
