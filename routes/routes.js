@@ -48,7 +48,8 @@ function checkFileType(file , callback){
 const app = express();
 
 app.get('/google4c88b64fed25bf50', function(req, res){
-    res.render("google4c88b64fed25bf50");
+    // res.sendFile("../views/google4c88b64fed25bf50.html" );
+    res.sendFile(path.join(__dirname, '..', 'views', 'google4c88b64fed25bf50.html'));
 })
 
 app.get('/',controller.getHome);
