@@ -18,5 +18,10 @@ http://localhost:9090/
 
 Sample Users
 
-Admin || seanxnieva || secret
-Customer || willowsmith || secret
+| Type | Username    | Passtword |
+|-------|---------------|--------|
+| Admin | seanxnieva    | secret |
+| Admin | katemagbitang | secret |
+| Admin | shimeizhang08 | secret |
+| Admin | oninolan      | secret |
+| Regular | willowsmith | secret |
